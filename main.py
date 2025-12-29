@@ -3,7 +3,7 @@ import math
 import networkx as nx
 import matplotlib.pyplot as plt
 
-N = 50
+N = 50                # number of nodes
 trials = 100          # Monte Carlo trials per r
 num_r = 100           # number of r values
 num_experiments = 10  # how many full curves
