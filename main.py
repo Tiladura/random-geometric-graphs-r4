@@ -40,7 +40,7 @@ for exp in range(num_experiments):
 
         avg_fractions.append(sum(fractions) / trials)
 
-    # ----- compute slope for THIS curve -----
+    #compute slope for THIS curve
     grads = []
     for i in range(1, len(r_values) - 1):
         dr = r_values[i + 1] - r_values[i - 1]
@@ -53,7 +53,7 @@ for exp in range(num_experiments):
     all_avg_fractions.append(avg_fractions)
     r_stars.append(r_star)
 
-# ---------- PLOTTING ----------
+#PLOTTING
 plt.figure(figsize=(8, 5))
 
 # plot all curves
